@@ -1,29 +1,53 @@
-Tic Tac Toe
+# Tic Tac Toe Game  
+A simple and interactive Tic Tac Toe game built with Python and Tkinter. 
+## Description  
+This is a classic Tic Tac Toe game where two players take turns marking spaces in a 3×3 grid.
+The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
+## Features  
+- **Two-player gameplay**: Players alternate between X and O
+-  **Graphical user interface**: Clean and intuitive Tkinter-based UI
+-  **Win detection**: Automatically detects when a player wins
+- **Draw detection**: Identifies when the game ends in a tie
+- **Play again option**: After each game, players can choose to restart or exit
+- **Responsive buttons**: Large, clearly labeled buttons for easy gameplay
+  
+ ## Requirements
+- Python 3.x
+- Tkinter (usually comes pre-installed with Python)
+ ## Installation  
+ 1. Ensure you have Python installed on your system
+ 2. Download or copy the game code to a file named `tic_tac_toe.py`
+## How to Run 
+Execute the game by running the following command in your terminal or command prompt:  ```bash  python tictactoe.py   ``
 
-This is a simple Tic Tac Toe game built using Python and the Tkinter graphical interface. You can play against another player on the same computer, and it provides a clean and interactive interface.
+How to Play
+-----------
+1.  The game starts with Player X's turn 
+2.  Click on any empty cell to place your mark
+3.  Players alternate turns between X and O
+4.  The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins    
+5.  If all cells are filled without a winner, the game ends in a draw    
+6.  After each game, a dialog box will ask if you want to play again:
+    *   Click "Yes" to reset the board and start a new game   
+    *   Click "No" to exit the application
+        
 
-Features
+Game Rules
+----------
+*   Players take turns placing their marks (X or O) on the 3×3 grid 
+*   Only one mark can be placed per turn  
+*   A player cannot place a mark on an already occupied cell 
+*   The game ends when: 
+    * One player has three marks in a row
+    * All cells are filled (draw)
+        
 
-Two-player game (X and O)
-
-Graphical interface using Tkinter
-
-Automatically detects a winner or a draw
-
-Option to restart the game after it ends
-
-Optionally highlights the winning combination
-
-How to Run
-
-Make sure Python 3 is installed on your computer.
-
-Clone or download this repository to your computer. For example, you can use the command line to run:
-git clone https://github.com/abhisheksingh212/tic_tac_toe.git
-and then navigate to the folder using: cd tic_tac_toe.
-
-Run the game by opening a terminal in the project folder and typing: python3 tic_tac_toe.py.
-
-A window will open where you can click the buttons to make your moves.
-
-When the game ends, a popup will ask if you want to play again.
+Code Structure
+--------------
+*   TicTacToe class: Main game class containing all game logic  
+*   \_\_init\_\_(): Initializes the game board and GUI   
+*   make\_move(): Handles player moves and game progression
+*   check\_winner(): Checks if the current player has won 
+*   is\_board\_full(): Checks if the board is completely filled 
+*   ask\_continue(): Displays game end dialog with play again option 
+*   reset\_game(): Resets the game to initial state
